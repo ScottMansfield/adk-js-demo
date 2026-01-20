@@ -5,6 +5,13 @@ import {
   materialSourcerPrompt,
   contractorScoutPrompt,
 } from "./prompts/index.js";
+import {
+  yelpApi,
+  productSearchApi,
+  priceComparator,
+  calendarCheck,
+  emailDrafter,
+} from "./tools/index.js";
 
 const designConsultantAgent = new LlmAgent({
   name: "designConsultantAgent",
@@ -22,6 +29,7 @@ const materialSourcerAgent = new LlmAgent({
     "The procurement specialist. It takes the abstract list from " +
     "the designer and finds concrete reality.",
   instruction: materialSourcerPrompt,
+  tools: [productSearchApi, priceComparator],
 });
 
 const contractorScoutAgent = new LlmAgent({
@@ -31,6 +39,7 @@ const contractorScoutAgent = new LlmAgent({
     "The logistics handler. It finds people and manages initial " +
     "communication.",
   instruction: contractorScoutPrompt,
+  tools: [yelpApi, calendarCheck, emailDrafter],
 });
 
 export const rootAgent = new LlmAgent({
