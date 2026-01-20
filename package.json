@@ -25,6 +25,8 @@
   "homepage": "https://github.com/ScottMansfield/adk-js-demo#readme",
   "dependencies": {
     "@google/adk": "^0.2.4",
+    "@google/adk-devtools": "^0.2.4",
+    "@types/node": "^25.0.9",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
