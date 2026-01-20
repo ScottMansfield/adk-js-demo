@@ -28,6 +28,7 @@
     "@google/adk-devtools": "^0.2.4",
     "@types/node": "^25.0.9",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "zod": "^3.25.76"
   }
 }
