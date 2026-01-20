@@ -1,0 +1,31 @@
+{
+  "name": "adk-js-demo",
+  "version": "0.1.0",
+  "description": "A demo of the ADK Typescript library",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottMansfield/adk-js-demo.git"
+  },
+  "keywords": [],
+  "author": "Scott Mansfield",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ScottMansfield/adk-js-demo/issues"
+  },
+  "homepage": "https://github.com/ScottMansfield/adk-js-demo#readme",
+  "dependencies": {
+    "@google/adk": "^0.2.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
